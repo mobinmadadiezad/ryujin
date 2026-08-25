@@ -1,0 +1,45 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--ry-font-family-primary);
+  font-size: var(--ry-font-md);
+  font-weight: var(--ry-weight-medium);
+  line-height: var(--ry-leading-normal);
+  color: var(--ry-text-primary);
+  background-color: var(--ry-bg-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+
+::selection {
+  color: var(--ry-bg-primary);
+  background-color: var(--ry-blue-1);
+}
+
+button,
+a,
+input,
+textarea,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+button,
+a {
+  user-select: none;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--ry-blue-1);
+  outline-offset: 3px;
+}
