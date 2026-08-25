@@ -1,0 +1,18 @@
+:root {
+  /* ================================== Primitive ================================== */
+  --ry-radius-sm: 0.375rem; /* 6px */
+  --ry-radius-md: 0.5rem; /* 8px */
+  --ry-radius-lg: 0.75rem; /* 12px */
+  --ry-radius-xl: 1rem; /* 16px */
+  --ry-radius-full: 9999px;
+
+  /* ================================== Semantic ================================== */
+  --ry-radius-control: var(--ry-radius-sm);
+  --ry-radius-input: var(--ry-radius-md);
+  --ry-radius-card: var(--ry-radius-lg);
+  --ry-radius-container: var(--ry-radius-xl);
+  --ry-radius-image: var(--ry-radius-lg);
+  --ry-radius-badge: var(--ry-radius-full);
+  --ry-radius-avatar: var(--ry-radius-full);
+  --ry-radius-pill: var(--ry-radius-full);
+}

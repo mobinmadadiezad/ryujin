@@ -1,0 +1,26 @@
+:root {
+  /* ================================== Primitive ================================== */
+  --ry-black-1: #040507;
+  --ry-black-2: #171b22;
+  --ry-white-1: #e8edf7;
+  --ry-white-2: #dee3f0;
+  --ry-blue-1: #2952c3;
+  --ry-blue-2: #486dcd;
+
+  /* ================================== Semantic ================================== */
+  /* Background */
+  --ry-bg-primary: var(--ry-white-1);
+  --ry-bg-secondary: var(--ry-white-2);
+
+  /* Text */
+  --ry-text-primary: var(--ry-black-1);
+  --ry-text-secondary: var(--ry-black-2);
+  --ry-text-accent: var(--ry-blue-1);
+
+  /* border */
+  --ry-border-color-primary: var(--ry-white-2);
+  --ry-border-color-accent: var(--ry-blue-2);
+
+  /* Hover */
+  --ry-accent-hover: var(--ry-blue-2);
+}
