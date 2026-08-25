@@ -19,4 +19,6 @@
   --ry-gap-md: var(--ry-space-4);
   --ry-gap-lg: var(--ry-space-6);
   --ry-gap-xl: var(--ry-space-8);
+
+  --ry-container-padding: var(--ry-space-6);
 }

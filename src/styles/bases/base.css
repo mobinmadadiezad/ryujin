@@ -10,6 +10,7 @@ body {
   line-height: var(--ry-leading-normal);
   color: var(--ry-text-primary);
   background-color: var(--ry-bg-primary);
+  text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;

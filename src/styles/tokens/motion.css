@@ -1,0 +1,25 @@
+:root {
+  /* Duration */
+  --ry-duration-fast: 150ms;
+  --ry-duration-normal: 300ms;
+  --ry-duration-slow: 500ms;
+  --ry-duration-slower: 700ms;
+
+  /* Easing */
+  --ry-ease-linear: linear;
+  --ry-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ry-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ry-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ry-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
