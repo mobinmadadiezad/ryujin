@@ -11,6 +11,8 @@
 
 /* Layout */
 @import "./layout/container.css";
+@import "./layout/section.css";
 
 /* Css Components */
 @import "../components/Header/Header.css";
+@import "../components/Hero/Hero.css";

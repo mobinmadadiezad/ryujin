@@ -1,0 +1,10 @@
+.section {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding-block: clamp(var(--ry-space-16), 8vw, var(--ry-space-24));
+}
+
+.section--compact {
+  padding-block: clamp(var(--ry-space-8), 8vw, var(--ry-space-16));
+}

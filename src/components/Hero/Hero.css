@@ -1,0 +1,223 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../../assets/bg-hero.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgb(255, 255, 255) 25%,
+    rgba(255, 255, 255, 0.445) 40%,
+    rgba(255, 255, 255, 0) 65%
+  );
+
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  gap: var(--ry-space-2);
+}
+
+.hero__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: var(--ry-space-4);
+  z-index: 1;
+}
+
+.hero__eyebrow {
+  color: var(--ry-text-accent);
+  font-size: var(--ry-caption-size);
+  font-weight: var(--ry-caption-weight);
+  line-height: var(--ry-caption-leading);
+  letter-spacing: var(--ry-caption-tracking);
+}
+
+.hero__title {
+  width: 20rem;
+  color: var(--ry-text-primary);
+  font-size: var(--ry-display-size);
+  font-weight: var(--ry-display-weight);
+  line-height: var(--ry-display-leading);
+  letter-spacing: var(--ry-display-tracking);
+}
+
+.hero__title span {
+  color: var(--ry-text-accent);
+}
+
+.hero__jp {
+  color: var(--ry-text-accent);
+  font-size: var(--ry-heading-md-size);
+  font-weight: var(--ry-weight-light);
+  letter-spacing: var(--ry-heading-md-tracking);
+}
+
+.hero__description {
+  width: 17rem;
+  color: var(--ry-text-secondary);
+  font-size: var(--ry-body-md-size);
+  font-weight: var(--ry-body-md-weight);
+  line-height: var(--ry-body-md-leading);
+  letter-spacing: var(--ry-body-md-tracking);
+}
+
+.hero__action {
+  display: flex;
+  align-items: center;
+  gap: var(--ry-space-2);
+  position: relative;
+  background: transparent;
+  color: var(--ry-text-accent);
+  border: 1px solid var(--ry-border-color-accent);
+  border-radius: var(--ry-radius-control);
+  padding: var(--ry-space-2) var(--ry-space-6);
+  transition: color var(--ry-duration-normal) var(--ry-ease-standard);
+  margin-top: var(--ry-space-4);
+}
+
+.hero__action:hover {
+  color: var(--ry-white-1);
+}
+
+.hero__action::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  background: var(--ry-accent-hover);
+  transition: width var(--ry-duration-normal) var(--ry-ease-in);
+  z-index: -1;
+}
+
+.hero__action:hover::before {
+  width: 100%;
+}
+
+.hero__action svg {
+  transition: transform var(--ry-duration-normal) var(--ry-ease-standard);
+}
+
+.hero__action:hover svg {
+  transform: translateX(10px);
+}
+
+.hero__visual {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__scroll {
+  position: absolute;
+  left: 50%;
+  bottom: var(--ry-space-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--ry-space-3);
+  color: var(--ry-text-primary);
+  text-decoration: none;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: color var(--ry-duration-normal) var(--ry-ease-standard);
+  animation: scroll 2s var(--ry-ease-in-out) infinite;
+}
+
+.hero__scroll:hover {
+  color: var(--ry-accent-hover);
+}
+
+.hero__scroll-label {
+  font-size: var(--ry-font-xs);
+  font-weight: var(--ry-weight-medium);
+  letter-spacing: var(--ry-tracking-widest);
+  white-space: nowrap;
+}
+
+.hero__scroll-line {
+  position: relative;
+  width: 2px;
+  height: 48px;
+  overflow: visible;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.hero__scroll-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  background: var(--ry-accent-hover);
+  animation: test-scroll 2s var(--ry-ease-in-out) infinite;
+}
+
+@keyframes test-scroll {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(300%);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.1;
+  }
+}
+
+@media (max-width: 910px) {
+  .hero__container {
+    flex-direction: column;
+  }
+
+  .hero::before {
+    background: radial-gradient(
+      ellipse 80% 70% at 50% 50%,
+      rgba(255, 255, 255, 0.98) 0%,
+      rgba(255, 255, 255, 0.9) 45%,
+      rgba(255, 255, 255, 0.55) 65%,
+      rgba(255, 255, 255, 0) 85%
+    );
+    backdrop-filter: blur(5px);
+  }
+
+  .hero__content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__visual {
+    display: none;
+  }
+}

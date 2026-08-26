@@ -10,7 +10,7 @@
   --ry-font-xl: 1.25rem;
   --ry-font-2xl: 1.5rem;
   --ry-font-3xl: 2rem;
-  --ry-font-4xl: 3rem;
+  --ry-font-4xl: 4rem;
 
   --ry-weight-light: 300;
   --ry-weight-regular: 400;
@@ -45,7 +45,7 @@
   --ry-heading-lg-leading: var(--ry-leading-tight);
   --ry-heading-lg-tracking: var(--ry-tracking-tight);
 
-  --ry-heading-md-size: var(--ry-font-2x);
+  --ry-heading-md-size: var(--ry-font-2xl);
   --ry-heading-md-weight: var(--ry-weight-semibold);
   --ry-heading-md-leading: var(--ry-leading-snug);
   --ry-heading-md-tracking: var(--ry-tracking-tight);
