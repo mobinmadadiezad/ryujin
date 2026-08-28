@@ -4,6 +4,7 @@
 @import "./tokens/spacing.css";
 @import "./tokens/typography.css";
 @import "./tokens/motion.css";
+@import "./tokens/shadow.css";
 
 /* Bases */
 @import "./bases/reset.css";
@@ -16,3 +17,4 @@
 /* Css Components */
 @import "../components/Header/Header.css";
 @import "../components/Hero/Hero.css";
+@import "../components/Builds/Builds.css";
