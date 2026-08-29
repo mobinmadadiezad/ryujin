@@ -10,21 +10,21 @@ The project focuses on Japanese automotive culture with a minimal, dark, and lux
 
 ## Features
 
-* Responsive layout
-* Modern Japanese-inspired UI
-* Hero section with automotive visual
-* Builds showcase section
-* Responsive builds grid
-* Custom CSS design system
-* Typography, spacing, color, radius, shadow, and motion tokens
-* Modular component structure
-* CSS-based animations and interactions
+- Responsive layout
+- Modern Japanese-inspired UI
+- Hero section with automotive visual
+- Builds showcase section
+- Responsive builds grid
+- Custom CSS design system
+- Typography, spacing, color, radius, shadow, and motion tokens
+- Modular component structure
+- CSS-based animations and interactions
 
 ## Built With
 
-* HTML5
-* CSS3
-* JavaScript (ES6+)
+- HTML5
+- CSS3
+- JavaScript (ES6+)
 
 ## Project Structure
 
@@ -88,25 +88,25 @@ RYŪJIN uses a custom CSS design system based on reusable design tokens.
 
 ### Tokens
 
-* **Colors** — `color.css`
-* **Typography** — `typography.css`
-* **Spacing** — `spacing.css`
-* **Radius** — `radius.css`
-* **Shadows** — `shadow.css`
-* **Motion** — `motion.css`
+- **Colors** — `color.css`
+- **Typography** — `typography.css`
+- **Spacing** — `spacing.css`
+- **Radius** — `radius.css`
+- **Shadows** — `shadow.css`
+- **Motion** — `motion.css`
 
 ### Layout
 
-* `container.css` — responsive content container
-* `section.css` — reusable section layout utilities
+- `container.css` — responsive content container
+- `section.css` — reusable section layout utilities
 
 ## Components
 
 Each major UI section is organized as an independent component:
 
-* Header
-* Hero
-* Builds
+- Header
+- Hero
+- Builds
 
 Each component contains its own HTML, CSS, and JavaScript when needed.
 

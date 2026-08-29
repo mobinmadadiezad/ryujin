@@ -8,15 +8,15 @@
 .builds__container {
   display: flex;
   align-items: center;
-  gap: var(--ry-space-2);
+  gap: var(--ry-gap-sm);
 }
 
-.builds__content {
+.builds__header {
   flex: 0 0 30%;
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: var(--ry-space-2);
+  gap: var(--ry-gap-sm);
 }
 
 .builds__eyebrow {
@@ -50,7 +50,7 @@
 .builds__action {
   display: flex;
   align-items: center;
-  gap: var(--ry-space-2);
+  gap: var(--ry-gap-sm);
   position: relative;
   background: transparent;
   color: var(--ry-text-accent);
@@ -94,7 +94,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--ry-space-4);
+  gap: var(--ry-gap-md);
 }
 
 .builds__carousel-heading {
@@ -102,7 +102,7 @@
     display: flex;
     align-items: center;
     justify-content: end;
-    gap: var(--ry-space-6);
+    gap: var(--ry-gap-lg);
 }
 
 .builds__btn {
@@ -160,7 +160,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: var(--ry-space-2);
+  gap: var(--ry-gap-sm);
 }
 
 .builds__card {
@@ -222,7 +222,7 @@
   color: var(--ry-text-secondary);
   display: flex;
   align-items: center;
-  gap: clamp(var(--ry-space-1), 33vw, var(--ry-space-4));
+  gap: clamp(var(--ry-gap-sm), 33vw, var(--ry-gap-md));
   text-wrap: nowrap;
 }
 
@@ -236,7 +236,7 @@
         gap: var(--ry-space-10);
     }
 
-    .builds__content {
+    .builds__header {
         align-items: center;
         text-align: center;
     }

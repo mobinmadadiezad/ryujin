@@ -75,7 +75,7 @@
 .header__actions {
   display: flex;
   align-items: center;
-  gap: var(--ry-space-6);
+  gap: var(--ry-gap-lg);
 }
 
 .header__action-contact {
@@ -127,7 +127,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--ry-space-1);
+  gap: var(--ry-gap-sm);
   border: 2px solid var(--ry-border-color-accent);
   border-radius: var(--ry-radius-pill);
   padding: var(--ry-space-2);
