@@ -107,6 +107,8 @@
 
 .builds__btn {
   font-size: var(--ry-heading-lg-size);
+  width: 5rem;
+  height: 5rem;
   color: var(--ry-text-accent);
   background-color: transparent;
   border-radius: var(--ry-radius-pill);
@@ -206,7 +208,7 @@
 
 .builds__card-title {
   font-size: var(--ry-heading-sm-size);
-  font-width: var(--ry-heading-sm-weight);
+  font-weight: var(--ry-heading-sm-weight);
   letter-spacing: var(--ry-heading-sm-tracking);
   transition: color var(--ry-duration-normal) var(--ry-ease-standard);
 }
